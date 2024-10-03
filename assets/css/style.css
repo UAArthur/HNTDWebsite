@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.inter-extrabold {
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 3px 0;
+}
+
+.fa-user, .material-icons, #personIcon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+}
+
+.dropdown {
+    margin-left: auto;
+    margin-right: 30px;
+    display: none;
+    position: relative;
+}
+
+.dropbtn {
+    display: flex;
+    align-items: center;
+    background-color: #ee6d6c;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 160px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dropdown-content a i {
+    margin-right: 8px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #c65c5b;
+}
+
+#nav .dropdown-content #aLogout {
+    color: red;
+    opacity: 60%;
+    font-weight: bold;
+}
+
+.auth {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.auth a {
+    font-size: 1rem;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.auth #registerBtn {
+    background-color: #ee6d6c;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid transparent;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.auth #registerBtn:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+.auth #loginBtn {
+    color: #706f6f;
+}
+
+.auth #loginBtn:hover {
+    color: black;
+}
+
+.content, #content {
+    flex: 1;
+    margin-top: 70px;
+    padding: 70px 1.5rem 1.5rem;
+}

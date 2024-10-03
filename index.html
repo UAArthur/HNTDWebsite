@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HNTDBackend</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/e3ddfa8517.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div id="nav">
+    <a href="index.html">Home</a>
+    <a href="Services.html">Services</a>
+    <a href="AboutUs.html">About Us</a>
+<!--    Display dropdown, if the user is logged in-->
+    <div class="dropdown" id="userDropdown">
+        <button class="dropbtn" id="dropdwnbtn">
+            <i id="personIcon" class="material-icons md-18">person</i>
+            %Username%</button>
+        <div class="dropdown-content">
+            <a id="aDashboard" href="dashboard.php"><i class="material-icons md-18">dashboard</i>Dashboard</a>
+            <div class="divider"></div>
+            <a id="aLogout" href="logout.php"><i class="material-icons md-18">logout</i>Logout</a>
+        </div>
+    </div>
+<!--    If not logged in, display auth buttons-->
+    <div class="auth" id="userAuth">
+        <a id="loginBtn"    href="login.php">Login</a>
+        <a id="registerBtn" href="register.php">Create Account</a>
+    </div>
+</div>
+<!--Start of the content-->
+<div id="content">
+
+
+</div>
+
+<!--End of the content-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
